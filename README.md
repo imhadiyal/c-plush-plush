@@ -1,2 +1,0 @@
-# c-plush-plush
-c++
