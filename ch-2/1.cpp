@@ -1,55 +1,70 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-class student
-{
 
+class Employee
+{
 public:
     int emp_id;
     char emp_name[20];
     int emp_age;
-    char emp_rol[20];
-    int emp_salary;
+    char emp_role[20];
+    double emp_salary;
     char emp_city[20];
-    int emp_experience;
+    char emp_experience[20];
     char emp_company_name[20];
+
+    void SetEmpoyeeData() // Function to take input of employee details
+    {
+        cout << "Enter Employee ID: ";
+        cin  >> emp_id;
+        fflush(stdin); //To clean Me
+        cout << "Enter Employee Name: ";
+        gets(emp_name);
+        cout << "Enter Employee Age: ";
+        cin  >> emp_age;
+        fflush(stdin);
+        cout << "Enter Employee Role: ";
+        gets(emp_role);
+        cout << "Enter Employee Salary: ";
+        cin  >> emp_salary;
+        fflush(stdin);
+        cout << "Enter Employee City: ";
+        gets(emp_city);
+        cout << "Enter Employee Experience: ";
+        gets(emp_experience);
+        cout << "Enter Employee Company Name: ";
+        gets(emp_company_name);
+    }
+
+    void GetEmployeeData() // Function to display employee details
+    {
+        cout << "Employee ID: "           << emp_id           << endl;
+        cout << "Employee Name: "         << emp_name         << endl;
+        cout << "Employee Age: "          << emp_age          << endl;
+        cout << "Employee Role: "         << emp_role         << endl;
+        cout << "Employee Salary: "       << emp_salary       << endl;
+        cout << "Employee City: "         << emp_city         << endl;
+        cout << "Employee Experience: "   << emp_experience   << " years" << endl;
+        cout << "Employee Company Name: " << emp_company_name << endl;
+    }
 };
+
 int main()
 {
-    student s1, s2;
-    cout << "entet a id:";
-    cin >> s1.emp_id;
-    cout << "entet a name:";
-    gets(s1.emp_name);
-    cout << "entet a age:";
-    cin >> s1.emp_age;
-    cout << "entet a rol:";
-    gets(s1.emp_rol);
-    cout << "entet a salary:";
-    cin >> s1.emp_salary;
-    cout << "entet a city:";
-    gets(s1.emp_city);
-    cout << "entet a experience:";
-    cin >> s1.emp_experience;
-    cout << "entet a company name:";
-    gets(s1.emp_company_name);
+    Employee e1, e2, e3, e4, e5;
 
-    cout << "entet a id:";
-    cin >> s2.emp_id;
-    cout << "entet a name:";
-    gets(s2.emp_name);
-    cout << "entet a age:";
-    cin >> s2.emp_age;
-    cout << "entet a rol:";
-    gets(s2.emp_rol);
-    cout << "entet a salary:";
-    cin >> s2.emp_salary;
-    cout << "entet a city:";
-    gets(s2.emp_city);
-    cout << "entet a experience:";
-    cin >> s2.emp_experience;
-    cout << "entet a company name:";
-    gets(s2.emp_company_name);
-    cout << "name:" << s1.emp_name << "id" << s1.emp_id << "age:" << s1.emp_age << "rol:" << s1.emp_rol << "salary:" << s1.emp_salary << "city" << s1.emp_city << "experience;" << s1.emp_experience << "companyname:" << s1.emp_company_name;
-    cout << "name:" << s2.emp_name << "id" << s2.emp_id << "age:" << s2.emp_age << "rol:" << s2.emp_rol << "salary:" << s2.emp_salary << "city" << s2.emp_city << "experience;" << s2.emp_experience << "companyname:" << s2.emp_company_name;
+    e1.SetEmpoyeeData();
+    e2.SetEmpoyeeData();
+    e3.SetEmpoyeeData();
+    e4.SetEmpoyeeData();
+    e5.SetEmpoyeeData();
+
+    e1.GetEmployeeData();
+    e2.GetEmployeeData();
+    e3.GetEmployeeData();
+    e4.GetEmployeeData();
+    e5.GetEmployeeData();
+
+    return 0;
 }
