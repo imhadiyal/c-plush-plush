@@ -4,16 +4,16 @@ using namespace std;
 class Railway
 {
 private:
-    long int Train_number;
+    long int number;
     
-    char Train_Name[50];
+    char Name[50];
     char Source[20];
     char Destination[20];
-    char train_time[20];
+    char time[20];
     int choice;
 
 public:
-    void Setter()
+    void Setrailway()
     {
         cout <<":Enter data:" << endl
              << "Enter train Source : ";
@@ -21,10 +21,10 @@ public:
         cout << "Enter train Destination : ";
         gets(this->Destination);
         cout << "Enter train time : ";
-        gets(this->train_time);
+        gets(this->time);
     }
 
-    void Display_Records()
+    void Display()
     {
         cout << "Train according your time" << endl;
     lable:Rajdhani Express
@@ -57,6 +57,6 @@ public:
 int main()
 {
     Railway r1;
-    r1.Setter();
-    r1.Display_Records();
+    r1.Setrrailway();
+    r1.Display();
 }
