@@ -15,7 +15,7 @@ int main()
 {
     time t1;
 
-    cout << "Enter second :";
+    cout << "enter second :";
     cin >> t1.number;
 
     t1.hour = t1.number / 3600;
