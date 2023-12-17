@@ -15,7 +15,7 @@ private:
 public:
     void Setter()
     {
-        cout << "----:Enter data:----" << endl
+        cout <<":Enter data:" << endl
              << "Enter train Source : ";
         gets(this->Source);
         cout << "Enter train Destination : ";
