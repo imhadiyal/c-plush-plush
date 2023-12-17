@@ -16,6 +16,7 @@ public:
     void sethotel()
     {
 
+        cout << endl;
         cout << "enter your id: ";
         cin >> this->id;
         fflush(stdin);
@@ -43,6 +44,7 @@ public:
         cin >> numberOfstaff;
         cout << "enter a roomQuantity: ";
         cin >> roomQuantity;
+        cout << endl;
     }
     void gethotel()
     {
@@ -91,18 +93,19 @@ public:
 };
 int main()
 {
-    Hotels h1, h2, h3;
-    cout << endl
-         << "---------------: first hotel  :---------------" << endl;
-    h1.sethotel();
-    cout << endl
-         << "---------------: second hotel :---------------" << endl;
-    h2.sethotel();
-    cout << endl
-         << "---------------: first hotel Result :---------------" << endl;
-    h1.gethotel();
-    cout << endl
-         << "---------------: second hotel Result :---------------" << endl;
-    h2.gethotel();
+    Hotels h1;
+    int n;
+    cout << "enter a numbar of hotel: ";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        h1.sethotel();
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        h1.gethotel();
+    }
+
     return 0;
 }
