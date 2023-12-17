@@ -1,7 +1,6 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
-#include <string>
-
 class Data
 {
 public:
