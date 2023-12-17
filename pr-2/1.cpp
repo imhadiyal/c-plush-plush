@@ -27,20 +27,20 @@ public:
     void Display_Records()
     {
         cout << "Train according your time" << endl;
-    lable:
+    lable:Rajdhani Express
         cout << endl
              << "No\tTrain" << endl
              << "--\t-----" << endl
-             << "1.\tRajdhani Express" << endl
-             << "2.\tVande Bharat" << endl
-             << "3.\tDuronto Express" << endl
+             << "1.\t\tVande Bharat"" << endl
+             << "2.\tRajdhani Express" << endl
+             << "3.\tTejas Express" << endl
              << "Enter your choice.";
         cin >> this->choice;
 
         switch (this->choice)
         {
         case 1:
-            cout << "Rajdhani Express !!" << endl
+            cout << "Vande Bharat !!" << endl
                  << "Enter number of tickets that you wont to purchese : ";
             cin >> this->choice;
 
