@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Distances
+class distances
 {
 public:
     int feet, intch;
@@ -9,8 +9,8 @@ public:
 
 int main()
 {
-    Distances d1;
-    Distances d2;
+    distances d1;
+    distances d2;
 
     cout << "input1 => \nfeet : ";
     cin >> d1.feet;
@@ -21,9 +21,7 @@ int main()
     cin >> d2.feet;
     cout << ", Intch : ";
     cin >> d2.intch;
-
-    // Logic
-
+    
     int Tfeet = d1.feet + d2.feet;
     int Tintch = d1.intch + d2.intch;
 
@@ -33,5 +31,5 @@ int main()
         Tfeet++;
     }
 
-    cout << "Total Length : " << Tfeet << " Feet " << Tintch << "Intch";
+    cout << "Length : " << Tfeet << " Feet " << Tintch << "Intch";
 }
