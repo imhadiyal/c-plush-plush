@@ -12,17 +12,17 @@ public:
 int main()
 {
 
-    Data person;
+    Data d1;
 
-    person.name = "Person 1";
-    person.age = 25;
+    d1.name = "Person 1";
+    d1.age = 25;
 
-    cout << "Name: " << person.name << ", Age: " << person.age << endl;
+    cout << "Name: " << d1.name << ", Age: " << d1.age << endl;
 
-    person.name = "Person 2";
-    person.age = 30;
+    d1.name = "Person 2";
+    d1.age = 30;
 
-    cout << "updated Name: " << person.name << " , updated Age: " << person.age << endl;
+    cout << "updated Name: " << d1.name << " , updated Age: " << d1.age << endl;
 
     return 0;
 }
