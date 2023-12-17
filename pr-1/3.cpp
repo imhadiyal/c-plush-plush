@@ -22,7 +22,7 @@ int main()
     person.name = "Person 2";
     person.age = 30;
 
-    cout << "Updated Name: " << person.name << " , Updated Age: " << person.age << endl;
+    cout << "updated Name: " << person.name << " , updated Age: " << person.age << endl;
 
     return 0;
 }
