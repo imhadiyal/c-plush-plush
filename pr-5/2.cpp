@@ -5,7 +5,7 @@ class A{
 	protected :
 		int age;
 
-		string error= "eligible for vote!!";
+		string error= "eligible for vote.";
 		public :
 			A()
 			{	
@@ -20,7 +20,7 @@ class A{
 						throw true;
 					}			
 				}catch (bool e){
-					cout << endl << "you are not eligible for vote!!";
+					cout << endl << "you are not eligible for vote.";
 				}catch(string error){
 					cout << error << endl;
 				}
